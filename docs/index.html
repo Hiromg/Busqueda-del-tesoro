@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archivo Confidencial: Operación Nupcial</title>
-    <!-- Remote Google Fonts fallback: carga por defecto si el navegador puede acceder -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Open+Sans:wght@300;400;600;700;800&display=swap">
+    <!-- Prefetch local fonts first, fallback injected by JS if needed -->
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CinzelDecorative-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GreatVibes-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <style>
         /* --- Estética de la Invitación --- */
         :root {
