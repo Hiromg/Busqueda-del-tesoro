@@ -1,0 +1,23 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# VSCode
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.log
+
+# Ignore secrets file often used during development
+.env
+
+# Keep fonts in repo (we want them included)
+# fonts/
