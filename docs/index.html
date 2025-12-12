@@ -606,11 +606,8 @@
             el.textContent = `Fuentes no cargadas: ${missing.join(', ')}`;
             document.body.appendChild(el);
 
-            // Inyectar import remoto como fallback (Google Fonts)
-            const remoteLink = document.createElement('link');
-            remoteLink.rel = 'stylesheet';
-            remoteLink.href = "https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Open+Sans:wght@300;400;600;700;800&display=swap";
-            document.head.appendChild(remoteLink);
+            // Fallback remoto deshabilitado: no inyectar Google Fonts automáticamente.
+            // Si necesitas un fallback remoto, re-habilita aquí la inyección del <link href="..."> manualmente.
 
             // Re-check after un segundo para ver si las fuentes se cargan desde Google
             setTimeout(() => {
